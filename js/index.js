@@ -2,11 +2,14 @@ var modalImg = document.querySelector('.modal-overlay-img');
 var modal = document.querySelector('.modal')
 var modalOverlay = document.querySelector('.modal-overlay');
 var app = document.querySelector('.app');
+var navTitletexts = document.querySelectorAll('.nav-title-text')
 setTimeout(()=>{
     modalImg.style.display = 'block';
 },1000)
 setTimeout(()=>{
-    app.style.animation = 'fadeout ease-out 1.4s';
     modal.style.display = 'none';
     modalImg.style.display = 'none';
-},5000)
+    navTitletexts.forEach((navTitletext)=>{
+        navTitletext.style.animation = 'fadeout linear 0.5s';
+    })
+},3000)
