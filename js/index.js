@@ -13,3 +13,39 @@ setTimeout(()=>{
         navTitletext.style.animation = 'fadeout linear 0.5s';
     })
 },3000)
+var textAb1 = document.querySelector('.textAbout-1');
+var textAb2 = document.querySelector('.textAbout-2');
+setTimeout(()=>{
+    textAb1.style.display = 'none';
+    textAb2.style.opacity = '1';
+    textAb2.style.animation = 'textAb2 linear 0.5s';
+},2400);
+var footerAbout = document.querySelector('.fotterAbout');
+var footerAbouttext = document.querySelector('.fotterAbout-text').textContent;
+var arrayFooterAbtexts = footerAbouttext.split("");
+document.querySelector('.fotterAbout-text').textContent = "";
+
+for(var i=0;i<arrayFooterAbtexts.length;i++){
+    footerAbout.innerHTML += "<span class=" + "fotterAbout-text" + ">" + arrayFooterAbtexts[i] +"</span>"
+}
+
+let char = 0;
+let timer = setInterval(() => {
+    const span = document.querySelectorAll('.fotterAbout-text')[char];
+    span.classList.add('fade');
+    char++;
+    if(char > arrayFooterAbtexts.length){
+        completeAbout();
+        return;
+    }
+}, 50);
+function completeAbout(){
+    clearInterval(timer);
+    timer = null;
+}
+var textAbchild = document.querySelectorAll('.bannerAbout-hold-text-detail-child');
+setTimeout(() => {
+    textAbchild.forEach((x)=>{
+        x.style.fontWeight = '800';
+    })
+}, 4200);

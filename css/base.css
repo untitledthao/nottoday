@@ -28,3 +28,17 @@ html{
         opacity: 1;
     }
 }
+@keyframes toTop{
+    0%{
+        top: 100%;
+    }
+    50%{
+        top: 80%;
+    }
+    70%{
+        top: 60%;
+    }
+    100%{
+        top: 0px;
+    }
+}
