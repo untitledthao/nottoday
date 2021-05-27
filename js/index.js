@@ -38,7 +38,7 @@ let timer = setInterval(() => {
         completeAbout();
         return;
     }
-}, 50);
+}, 20);
 function completeAbout(){
     clearInterval(timer);
     timer = null;

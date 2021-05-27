@@ -225,7 +225,7 @@ a:hover{
     font-size: 1.6rem;
 }
 .fade{
-    animation: fadeAbout linear 3s;
+    animation: fadeAbout linear 4s;
 }
 @keyframes fadeAbout{
     0%{
