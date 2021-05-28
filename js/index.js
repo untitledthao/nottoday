@@ -48,4 +48,4 @@ setTimeout(() => {
     textAbchild.forEach((x)=>{
         x.style.fontWeight = '800';
     })
-}, 6000);
+}, 5800);

@@ -50,10 +50,13 @@ a:hover{
     font-weight: 100;
     font-size: 1.6rem;
 }
-.navAbout-icon{
-    display: block;
-    font-size: 4rem;
-    color: #fff;
+.navAbout-icon-active{
+    width: 30px;
+    height: 30px;
+}
+.navAbout-icon-active img{
+    width: 100%;
+    height: 100%;
 }
 .textAbout-1{
     opacity: 0;
@@ -128,7 +131,7 @@ a:hover{
 .bannerAbout-hold-text-detail-hold {
     display: block;
     width: 400px;
-    height: 238px;
+    height: 252px;
     overflow: hidden;
     animation: rolldown linear 5s;
 }
@@ -157,6 +160,9 @@ a:hover{
 }
 .bannerAbout-hold-text-detail-child{
     position: relative;
+    bottom: -4px;
+    display: inline-block;
+    overflow: hidden;
 }
 .bannerAbout-hold-text-detail-child::after{
     content: "";
@@ -167,12 +173,12 @@ a:hover{
     width: 108px;
     height: 20px;
     visibility: hidden;
-    animation: textAboutchild linear 2s;
+    animation: textAboutchild linear 1.2s;
     animation-delay: 5s;
 }
 .bannerAbout-hold-text-detail-child:last-child::after{
     width: 200px;
-    animation: textAboutlastchild linear 2s;
+    animation: textAboutlastchild linear 1.2s;
     animation-delay: 5s;
 }
 @keyframes textAboutchild{
@@ -184,13 +190,15 @@ a:hover{
     50%{
         visibility: visible;
         width: 108px;
-        background-color: #fff;
+        background-color: #fff; 
         opacity: 1;
+        left: 0%;
     }
     100%{
         visibility: visible;
-        width: 0px;
+        width: 108px;
         background-color: #fff; 
+        left: 100%;
         opacity: 0;
     }
 }
@@ -203,13 +211,15 @@ a:hover{
     50%{
         visibility: visible;
         width: 200px;
-        background-color: #fff;
+        background-color: #fff; 
         opacity: 1;
+        left: 0%;
     }
     100%{
         visibility: visible;
-        width: 0px;
+        width: 200px;
         background-color: #fff; 
+        left: 100%;
         opacity: 0;
     }
 }
