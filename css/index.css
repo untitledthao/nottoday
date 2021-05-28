@@ -166,18 +166,51 @@ a:hover{
     display: block;
     width: 108px;
     height: 20px;
-    background-color: transparent;
-    animation: textAboutchild linear 1s;
+    visibility: hidden;
+    animation: textAboutchild linear 2s;
+    animation-delay: 5s;
+}
+.bannerAbout-hold-text-detail-child:last-child::after{
+    width: 200px;
+    animation: textAboutlastchild linear 2s;
     animation-delay: 5s;
 }
 @keyframes textAboutchild{
-    from{
+    0%{
+        visibility: visible;
         width: 0px;
         background-color: #fff;
     }
-    to{
+    50%{
+        visibility: visible;
         width: 108px;
         background-color: #fff;
+        opacity: 1;
+    }
+    100%{
+        visibility: visible;
+        width: 0px;
+        background-color: #fff; 
+        opacity: 0;
+    }
+}
+@keyframes textAboutlastchild{
+    0%{
+        visibility: visible;
+        width: 0px;
+        background-color: #fff;
+    }
+    50%{
+        visibility: visible;
+        width: 200px;
+        background-color: #fff;
+        opacity: 1;
+    }
+    100%{
+        visibility: visible;
+        width: 0px;
+        background-color: #fff; 
+        opacity: 0;
     }
 }
 .bannerAbout-hold-img{
