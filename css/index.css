@@ -1,9 +1,22 @@
-
 body{
     overflow: hidden;
 }
-a:hover{
-    
+#circularcursor {
+    background-color: #fff;
+    opacity: 0.6;
+    border: none;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    pointer-events: none;
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 80%);
+}
+a:hover{   
+    cursor: none;
 }
 .app{
     width: 100%;
@@ -17,7 +30,7 @@ a:hover{
     height: 100vh;
     overflow: hidden;
     background-color: #000;
-    animation: toTop linear 0.7s;
+    animation: toTop linear 0.5s;
 }
 .nav {
     display: flex;

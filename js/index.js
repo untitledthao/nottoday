@@ -1,3 +1,12 @@
+$(document).ready(function() {
+    $(document).on('mousemove', function(e) {
+      $('#circularcursor').css({
+        left: e.pageX - 10,
+        top: e.pageY - 10
+      });
+    })
+  });
+
 var modalImg = document.querySelector('.modal-overlay-img');
 var modal = document.querySelector('.modal')
 var modalOverlay = document.querySelector('.modal-overlay');
