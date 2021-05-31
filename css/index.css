@@ -1,5 +1,6 @@
 body{
     overflow: hidden;
+    transition: 0.6s;
 }
 #circularcursor {
     background-color: #fff;
@@ -31,7 +32,6 @@ a:hover{
     overflow: hidden;
     background-color: #000;
     animation: toTop linear 0.5s;
-    transition: 0.6s;
 }
 .nav {
     display: flex;
