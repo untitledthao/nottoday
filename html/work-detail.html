@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="http://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body class="bodyworkdetail">
+    <div id="circularcursor"></div>
+    <div class="appWorkdetail">
+        <div class="nav grid wide">
+            <a href="/html/work.html" class="navAbout-icon-active"><img src="/images/Group 25.png" alt="" srcset=""></a>
+            <h1 class="nav-title"><a href="/html/about.html" class="nav-title-textWork txtwrdtl">ABOUT</a></h1>
+        </div>
+        <div class="bannerWorkdetail grid wide">
+            <div class="row">
+                <div class="bannerWorkdetail-title col">
+                    <h3 class="bannerWorkdetail-title-text">FRANKENSTEIN PROJECT</h3>
+                    <span class="bannerWorkdetail-title-discirp">
+                        The leitmotif of the collection is the tragic context
+                        of trying puzzle pieces together with the intention of a normal thing; 
+                        but ended up with something uncanny. Like the monster in Frankenstein, 
+                        <b>”I looked around I saw and heard of none like me. Was I, then, a monster.”</b>
+                        My Frankenstein is aware of his unconventional and unfitting appearance and can only react with it by acceptance.
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="mainWorkdetail">
+            <div class="mainWorkdetail-product" style="display: flex; align-items: flex-end;">
+                <img src="/images/Artboard 2.jpg">
+            </div>
+            <div class="mainWorkdetail-product">
+                <img src="/images/Artboard 56.jpg">
+                <div class="mainWorkdetail-product-listcolor">
+                    <span class="mainWorkdetail-product-listcolor-items">#809378</span>
+                    <span class="mainWorkdetail-product-listcolor-items">#C93344</span>
+                    <span class="mainWorkdetail-product-listcolor-items">#176D70</span>
+                    <span class="mainWorkdetail-product-listcolor-items">#928A8D</span>
+                    <span class="mainWorkdetail-product-listcolor-items">#F5EC38</span>
+                    <span class="mainWorkdetail-product-listcolor-items">#719EC3</span>
+                    <span class="mainWorkdetail-product-listcolor-items">#7BFF00</span>
+                    <span class="mainWorkdetail-product-listcolor-items">#F507D9</span>
+                </div>
+            </div>
+        </div>
+        <div class="bannerWorkdetail grid wide">
+            <div class="row">
+                <div class="bannerWorkdetail-title col col-pc6">
+                    
+                </div>
+                <div class="bannerWorkdetail-title col col-pc6">
+                    <h3 class="bannerWorkdetail-title-text"><i>CREATIVE PROCESS</i></h3>
+                </div>
+            </div>
+        </div>
+        <div class="mainWorkdetail">
+            <div class="mainWorkdetail-product" style="display: flex; align-items: flex-end;">
+                <img src="/images/Artboard 1.jpg">
+            </div>
+            <div class="mainWorkdetail-product">
+                <img src="/images/Artboard 4.jpg">
+            </div>
+        </div>
+        <img src="/images/Artboard 4 copied 3.jpg" style="width: 98%; margin-left: 1%;" alt="" srcset="">
+        <div class="mainWorkdetail" style="margin-top: 300px; display: flex; flex-wrap: wrap;">
+            <div class="mainWorkdetail-product">
+                <img src="/images/Artboard 4 copy.jpg">
+            </div>
+            <div class="mainWorkdetail-product" style="margin-top: 100px;">
+                <img src="/images/Artboard 4 copy 3.jpg">
+            </div>
+            <div class="mainWorkdetail-product">
+                <img src="/images/Artboard 5.jpg">
+            </div>
+            <div class="mainWorkdetail-product" style="margin-top: 100px;">
+                <img src="/images/Artboard 7.jpg">
+            </div>
+            <div class="mainWorkdetail-product">
+                <img src="/images/Artboard 8.jpg">
+            </div>
+            <div class="mainWorkdetail-product" style="margin-top: 100px;">
+                <img src="/images/Artboard 6.jpg">
+            </div>
+        </div>
+    </div>
+    <script src="/js/index.js"></script>
+    <script>
+        var workDetailColor = document.querySelectorAll('.mainWorkdetail-product-listcolor-items');
+        workDetailColor.forEach((x)=>{
+            x.addEventListener('click',()=>{
+                var changecolor = new RegExp('Ccolorwrkd');
+                x.classList.toggle('Ccolorwrkd');
+                if(changecolor.test(x.className) == true){
+                    x.style.backgroundColor = x.textContent;
+                }
+                else{
+                    x.style.backgroundColor = '#fff';
+                }
+            })
+        })
+    </script>
+</body>
+</html>

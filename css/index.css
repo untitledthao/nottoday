@@ -2,6 +2,9 @@ body{
     overflow: hidden;
     transition: 0.6s;
 }
+.bodyworkdetail{
+    overflow: auto;
+}
 #circularcursor {
     background-color: #fff;
     opacity: 0.6;
@@ -22,7 +25,7 @@ a:hover{
 .app{
     width: 100%;
     height: 100vh;
-    background-image: url("/images/g1\ \(1\).gif");
+    background-color: #18184a;
     overflow: hidden;
 }
 .appAbout{
@@ -32,6 +35,10 @@ a:hover{
     overflow: hidden;
     background-color: #000;
     animation: toTop linear 0.5s;
+}
+.appWorkdetail{
+    width: 100%;
+    background-color: #fff;
 }
 .nav {
     display: flex;
@@ -63,6 +70,15 @@ a:hover{
     color: #fff;
     font-weight: 100;
     font-size: 1.6rem;
+}
+.nav-title-textWork{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.6rem;
+}
+.txtwrdtl{
+    color: #000;
 }
 .navAbout-icon-active{
     width: 30px;
@@ -250,6 +266,58 @@ a:hover{
     width: 100%;
     height: 100%;
 }
+.banner-holdWork{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.banner-holdWork-img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #18184C;
+    outline: none;
+    margin-top: calc(0px - var(--nav-height));
+}
+.banner-holdWork-detailsimg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1200px;
+    height: 100%;
+}
+.banner-holdWork-detailsimg1{
+    opacity: 0;
+    height: 100%;
+}
+.banner-holdWork-detailsimg1:hover{
+    opacity: 1;
+    transition: 1.4s;
+}
+.banner-holdWork-detailsimg1 img{
+    width: 100%;
+}
+.banner-holdWork-detailsimg2{
+    opacity: 0;
+    height: 100%;
+}
+.banner-holdWork-detailsimg2:hover{
+    opacity: 1;
+    transition: 1.4s;
+}
+.banner-holdWork-detailsimg2 img{
+    width: 100%;
+}
+.banner-holdWork-detailsimg3{
+    opacity: 0;
+    height: 100%;
+}
+.banner-holdWork-detailsimg3:hover{
+    opacity: 1;
+    transition: 1.4s;
+}
+.banner-holdWork-detailsimg3 img{
+    width: 100%;
+}
 .banner-hold img{
     width: 100%;
     height: 100%;
@@ -297,4 +365,43 @@ a:hover{
     100%{
         opacity: 1;
     }
+}
+.bannerWorkdetail{
+
+}
+.bannerWorkdetail-title{
+    width: 50%;
+}
+.bannerWorkdetail-title-text{
+    font-size: 2.2rem;
+}
+.bannerWorkdetail-title-discirp{
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 20px;
+}
+.mainWorkdetail{
+    display: flex;
+}
+.mainWorkdetail-product{
+    width: 50%;
+}
+.mainWorkdetail-product img{
+    width: 100%;
+}
+.mainWorkdetail-product-listcolor{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mainWorkdetail-product-listcolor-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-size: 1.4rem;
+}
+.mainWorkdetail-product-listcolor-items:hover{
+    cursor: none;
 }

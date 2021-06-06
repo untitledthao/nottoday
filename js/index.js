@@ -58,3 +58,4 @@ setTimeout(() => {
         x.style.fontWeight = '800';
     })
 }, 5800);
+
