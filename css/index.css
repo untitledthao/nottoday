@@ -432,7 +432,7 @@ a:hover{
     width: 100px;
     height: 4px;
     background-color: #F5009B;
-    bottom: 35px;
+    bottom: 47px;
     left: 50%;
     transform: translateX(-50%);
     animation: iconsworkdetailss linear 0.6s;
@@ -443,11 +443,11 @@ a:hover{
         background-color: #F5009B;
     }
     50%{
-        bottom: 25px;
+        bottom: 35px;
         background-color: #0BFF65;
     }
     100%{
-        bottom: 35px;
+        bottom: 47px;
         background-color: #F5009B;
     }
 }
@@ -512,5 +512,33 @@ a:hover{
     }
     to{
         transform: scale(1);
+    }
+}
+.mainWorkdetail-product-ttlesxcs:hover .mainWorkdetail-product-iconbls{
+    display: block;
+}
+.mainWorkdetail-product-iconbls{
+    position: absolute;
+    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100px;
+    height: 4px;
+    background-color: #F5009B;
+    animation: iconsworkdetailss2 linear 0.6s;
+}
+@keyframes iconsworkdetailss2{
+    0%{
+        top: 120%;
+        background-color: #F5009B;
+    }
+    50%{
+        top: 80%;
+        background-color: #0BFF65;
+    }
+    100%{
+        top: 50%;
+        background-color: #F5009B;
     }
 }

@@ -71,18 +71,18 @@
         100%{
             opacity: 1;
         }
-    }
+      }
   </style>
 </head>
 <body>
     <div style="position: fixed; top: 10px; width: 100%; height: 50px; line-height: 50px; font-family: 'Helvetica 25 UltraLight', sans-serif;">
       <div style="width: 1200px; margin: auto; display: flex; justify-content: space-between; font-size: 1.6rem; animation: fadeout linear 1.6s;">
         <div style="display: flex;justify-content: space-between;width: 124px;">
-          <a style="color: #fff; text-decoration: none;" href="/html/work.html">WORK</a>
-          <a style="color: #fff; text-decoration: none;" href="/html/news.html">NEWS</a>
+          <a style=" text-decoration: none; color: #0BFF65;" id="hometitle" href="/html/work.html">WORK</a>
+          <a style=" text-decoration: none; color: #0BFF65;" id="hometitle" href="/html/news.html">NEWS</a>
         </div>
         <a href="/html/index.html"><img style="width: 100px; height: 70px;" src="/images/Not Today logotype -01.png"></a>
-        <a style="color: #fff; text-decoration: none;" href="/html/about.html">ABOUT</a>
+        <a style=" text-decoration: none; color: #0BFF65;" id="hometitle" href="/html/about.html">ABOUT</a>
       </div>
     </div>
     <div id="drag">
@@ -97,6 +97,15 @@
     <div id="ground"></div>
 
   <script>
+      var hometitle = document.querySelectorAll('#hometitle');
+      hometitle.forEach((x)=>{
+          x.addEventListener('mouseover',()=>{
+            x.style.color = '#F5009B';
+          })
+          x.addEventListener('mouseout',()=>{
+            x.style.color = '#0BFF65';
+          })
+      })
         var radius = 280;
         var autoRotate = true;
         var rotateSpeed = -60;
