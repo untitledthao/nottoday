@@ -8,6 +8,7 @@ html{
     box-sizing: border-box;
     font-size: 62.5%;
     font-family: 'Helvetica 25 UltraLight', sans-serif;
+    cursor: none;
 }
 @keyframes fadeIn{
     0%{
