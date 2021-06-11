@@ -17,19 +17,21 @@
     <div id="circularcursor"></div>
     <div class="appWorkdetail">
         <div class="nav grid wide">
-            <a href="/html/work.html" class="navAbout-icon-active"><img src="/images/Group 25(2).png" alt="" srcset=""></a>
+            <a href="/html/work.html" class="closenewdetails navAbout-icon-active"><img class="closenewdetailsImg" src="/images/Group 25.png"></a>
             <h1 class="nav-title"><a href="/html/about.html" class="nav-title-textWork txtwrdtl">ABOUT</a></h1>
         </div>
         <div class="bannerWorkdetail grid wide">
             <div class="row">
                 <div class="bannerWorkdetail-title col">
-                    <h3 class="bannerWorkdetail-title-text">FRANKENSTEIN PROJECT</h3>
+                    <h3 class="bannerWorkdetail-title-text">FRANKENSTEIN</h3>
                     <span class="bannerWorkdetail-title-discirp">
-                        The leitmotif of the collection is the tragic context
-                        of trying puzzle pieces together with the intention of a normal thing; 
-                        but ended up with something uncanny. Like the monster in Frankenstein, 
-                        <b>”I looked around I saw and heard of none like me. Was I, then, a monster.”</b>
-                        My Frankenstein is aware of his unconventional and unfitting appearance and can only react with it by acceptance.
+                        The leitmotif of the collection is the assemblage of eclectic 
+                        puzzle pieces with the intention of recreating normalcy.  
+                        However, as with the monster created in Mary Shelley’s Frankenstein, 
+                        something uncanny is pieced together in instead, “When I looked around 
+                        I saw and heard of none like me. Was I, then, a monster…?” By no means. 
+                        My “monster” is not only aware of his unconventional and unbecoming appearance 
+                        but assumes it with resplendence and self-assurance.
                     </span>
                 </div>
             </div>
@@ -74,10 +76,10 @@
         <div class="grid wide">
             <div class="row">
                 <div style="display: flex; align-items: flex-end;" class="mainWorkdetail-product col col-pc8">
-                    <img style="width: 100%; height: 96%;" src="/images/Mask Group 13.jpg">
+                    <img style="width: 100%; height: 96%;" src="/images/Gif-.gif">
                 </div>
                 <div class="mainWorkdetail-product col col-pc4">
-                    <span style="font-size: 2.2rem;font-weight: 100;color: #161648;">PUFFER</span>
+                    <span style="font-size: 2.2rem;font-weight: 800;color: #161648;letter-spacing: 2px;">PUFFER</span>
                     <div class="mainWorkdetail-product-imgs">
                         <img class="mainWorkdetail-product-imgs-img" id="Component 18 – 1.png" alt="Component 18 – 1.jpg" src="/images/Component 18 – 1.jpg">
                     </div>
@@ -118,7 +120,10 @@
                     </div>
                 </div>
             </div>
-            <div class="workdetailproducttitle">BOMBER</div>
+            <div class="workdetailproducttitle">
+                BOMBER
+                <span class="workdetailproducttitle-icons"></span>
+            </div>
             <div class="row">
                 <div class="mainWorkdetail-product col col-pc4">
                     <div class="mainWorkdetail-product-imgs">
@@ -136,7 +141,10 @@
                     </div>
                 </div>
             </div>
-            <div class="workdetailproducttitle">BIKER</div>
+            <div class="workdetailproducttitle">
+                BIKER
+                <span class="workdetailproducttitle-icons"></span>
+            </div>
             <div class="row">
                 <div class="mainWorkdetail-product col col-pc4">
                     <div class="mainWorkdetail-product-imgs">
@@ -154,7 +162,10 @@
                     </div>
                 </div>
             </div>
-            <div class="workdetailproducttitle">VEST</div>
+            <div class="workdetailproducttitle">
+                VEST
+                <span class="workdetailproducttitle-icons"></span>
+            </div>
             <div class="row">
                 <div class="mainWorkdetail-product col col-pc4">
                     <div class="mainWorkdetail-product-imgs">
@@ -168,7 +179,10 @@
                     
                 </div>
             </div>
-            <div class="workdetailproducttitle">OVERALL</div>
+            <div class="workdetailproducttitle">
+                OVERALL
+                <span class="workdetailproducttitle-icons"></span>
+            </div>
             <div class="row">
                 <div class="mainWorkdetail-product col col-pc4">
                     <div class="mainWorkdetail-product-imgs">
@@ -186,7 +200,10 @@
                     </div>
                 </div>
             </div>
-            <div class="workdetailproducttitle">TOP</div>
+            <div class="workdetailproducttitle">
+                TOP
+                <span class="workdetailproducttitle-icons"></span>
+            </div>
             <div class="row">
                 <div class="mainWorkdetail-product col col-pc4">
                     <div class="mainWorkdetail-product-imgs">
@@ -202,7 +219,10 @@
                     
                 </div>
             </div>
-            <div class="workdetailproducttitle">BOTTOM</div>
+            <div class="workdetailproducttitle">
+                BOTTOM
+                <span class="workdetailproducttitle-icons"></span>
+            </div>
             <div class="row">
                 <div class="mainWorkdetail-product col col-pc4">
                     <div class="mainWorkdetail-product-imgs">
@@ -220,7 +240,10 @@
                     </div>
                 </div>
             </div>
-            <div class="workdetailproducttitle">DRESS</div>
+            <div class="workdetailproducttitle">
+                DRESS
+                <span class="workdetailproducttitle-icons"></span>
+            </div>
             <div class="row">
                 <div class="mainWorkdetail-product col col-pc4">
                     <div class="mainWorkdetail-product-imgs">
@@ -242,6 +265,14 @@
     </div>
     <script src="/js/index.js"></script>
     <script>
+        var closenewdetails = document.querySelector('.closenewdetails')
+        var closenewdetailsImg = document.querySelector('.closenewdetailsImg')
+        closenewdetails.addEventListener('mouseover',()=>{
+            closenewdetailsImg.src = '/images/Component 32 – 1.png'
+        })
+        closenewdetails.addEventListener('mouseout',()=>{
+            closenewdetailsImg.src = '/images/Group 25.png'
+        })
         var workDetailColor = document.querySelectorAll('.mainWorkdetail-product-listcolor-items');
         workDetailColor.forEach((x)=>{
             x.addEventListener('mouseover',()=>{

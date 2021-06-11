@@ -17,19 +17,29 @@
     <div class="app" style="background-color: #fff;">
         <div id="circularcursor"></div>
         <div class="nav grid wide">
-            <a href="/html/index.html" class="navAbout-icon-active"><img src="/images/Group 25(2).png" alt="" srcset=""></a>
+            <a href="/html/index.html" class="closenewdetails navAbout-icon-active"><img class="closenewdetailsImg" src="/images/Group 25.png"></a>
             <h1 class="nav-title"><a href="/html/about.html" style="color: #000;" class="nav-title-textWork">ABOUT</a></h1>
         </div>
         <div class="banner">
             <div class="banner-holdWork" style="display: flex; justify-content: center; align-items: center;">
-                <img style="width: 250px; height: 150px; border: none;" class="banner-holdWork-img" src="/images/Group 27.png" alt="" srcset="">
+                <img style="width: 300px; height: 150px; border: none;" class="banner-holdWork-img" src="/images/Group 27.png" alt="" srcset="">
                 <div class="bannernews-product" style="overflow-y: auto;">
-                    <a href="/html/news-detail-1.html"><img style="margin-left: 40%;" src="/images/Component 25 – 1.jpg" alt="" srcset=""></a>
-                    <a href="/html/news-detail-2.html"><img src="/images/Component 26 – 1.jpg" alt="" srcset=""></a>
+                    <a href="/html/news-detail-1.html"><img style="margin-left: 40%;" src="/images/Component 25 – 1.png" alt="" srcset=""></a>
+                    <a href="/html/news-detail-2.html"><img src="/images/Component 26 – 1.png" alt="" srcset=""></a>
                 </div>
             </div>
         </div>
     </div>
     <script src="/js/index.js"></script>
+    <script>
+        var closenewdetails = document.querySelector('.closenewdetails')
+        var closenewdetailsImg = document.querySelector('.closenewdetailsImg')
+        closenewdetails.addEventListener('mouseover',()=>{
+            closenewdetailsImg.src = '/images/Component 32 – 1.png'
+        })
+        closenewdetails.addEventListener('mouseout',()=>{
+            closenewdetailsImg.src = '/images/Group 25.png'
+        })
+    </script>
 </body>
 </html>
