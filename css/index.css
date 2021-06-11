@@ -348,6 +348,8 @@ a:hover{
 }   
 .fotterAbout-text{
     font-size: 1.6rem;
+    text-decoration: none;
+    color: #fff;
 }
 .fade{
     animation: fadeAbout linear 4s;

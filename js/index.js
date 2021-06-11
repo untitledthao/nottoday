@@ -35,7 +35,7 @@ var arrayFooterAbtexts = footerAbouttext.split("");
 document.querySelector('.fotterAbout-text').textContent = "";
 
 for(var i=0;i<arrayFooterAbtexts.length;i++){
-    footerAbout.innerHTML += "<span class=" + "fotterAbout-text" + ">" + arrayFooterAbtexts[i] +"</span>"
+    footerAbout.innerHTML += "<a href=/html/index.html class=fotterAbout-text>"+ arrayFooterAbtexts[i] +"</a>"
 }
 
 let char = 0;
