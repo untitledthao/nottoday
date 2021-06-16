@@ -73,12 +73,12 @@ a:hover{
 }
 .nav-title-textWork{
     text-decoration: none;
-    color: #fff;
+    color: #00fc26;
     font-weight: 100;
     font-size: 1.6rem;
 }
-.txtwrdtl{
-    color: #000;
+.nav-title-textWork:hover{
+    color: #F5009B;
 }
 .navAbout-icon-active{
     width: 30px;
@@ -344,12 +344,16 @@ a:hover{
     height: 100%;
 }
 .fotterAbout{
-    color: #fff;
+    display: flex;
 }   
-.fotterAbout-text{
+.fotterAbout-text:hover .fotterAbout-text-content{
+    color: #F5009B;
+    cursor: none;
+}
+.fotterAbout-text-content{
     font-size: 1.6rem;
     text-decoration: none;
-    color: #fff;
+    color: #00fc26;
 }
 .fade{
     animation: fadeAbout linear 4s;

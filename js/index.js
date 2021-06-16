@@ -29,18 +29,18 @@ setTimeout(()=>{
     textAb2.style.opacity = '1';
     textAb2.style.animation = 'textAb2 linear 0.5s';
 },2400);
-var footerAbout = document.querySelector('.fotterAbout');
-var footerAbouttext = document.querySelector('.fotterAbout-text').textContent;
+var footerAbout = document.querySelector('.fotterAbout-text');
+var footerAbouttext = document.querySelector('.fotterAbout-text-content').textContent;
 var arrayFooterAbtexts = footerAbouttext.split("");
-document.querySelector('.fotterAbout-text').textContent = "";
+document.querySelector('.fotterAbout-text-content').textContent = "";
 
 for(var i=0;i<arrayFooterAbtexts.length;i++){
-    footerAbout.innerHTML += "<a href=/html/index.html class=fotterAbout-text>"+ arrayFooterAbtexts[i] +"</a>"
+    footerAbout.innerHTML += "<a href=/html/index.html class=fotterAbout-text-content>"+ arrayFooterAbtexts[i] +"</a>"
 }
 
 let char = 0;
 let timer = setInterval(() => {
-    const span = document.querySelectorAll('.fotterAbout-text')[char];
+    const span = document.querySelectorAll('.fotterAbout-text-content')[char];
     span.classList.add('fade');
     char++;
     if(char > arrayFooterAbtexts.length){
